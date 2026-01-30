@@ -2,6 +2,7 @@
 
 POST {{TodoApi_HostAddress}}/todoitems
 Content-Type: application/json
+// This POST operation creates new item (with new id number) each time a request is sent or "Send request" clicked. 
 
 {
   "name":"walk dog",
@@ -10,7 +11,8 @@ Content-Type: application/json
 ###
 
 GET {{TodoApi_HostAddress}}/todoitems
-
+ 
+// this request retrieves all the items from the list, created by POST operation.  
 ###=
 
 GET {{TodoApi_HostAddress}}/todoitems/complete
@@ -24,11 +26,16 @@ GET {{TodoApi_HostAddress}}/todoitems/2
 
 PUT {{TodoApi_HostAddress}}/todoitems/1
 Content-Type: application/json
+// here the item id of 1 is hard-coded. update/change to different id's for  UPDATE operation. 
 
 {
   "id": 1,
   "name": "feed fish",
-  "isComplete": false
+  "isComplete": false 
 }
 
 ###
+
+DELETE {{TodoApi_HostAddress}}/todoitems/{{id}}
+// Pass this id of the item to be deleted. 
+
