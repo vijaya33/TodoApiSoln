@@ -2,7 +2,7 @@ This is a simple open source .NET CORE 10.0 Minimal API's application.
 
 Built using ASP.NET Core Minimal APIs (WebApplication / route handlers).
 
-Designed as a learning project to demonstrate routing, request handling, and CRUD patterns in a minimal API style.
+Designed and developed as proof of concept (POC) to demonstrate routing, request handling, and CRUD patterns in a minimal API style.
 
 # TodoApi — ASP.NET Core Minimal API (Tutorial Project)
 
