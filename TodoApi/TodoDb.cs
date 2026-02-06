@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using TodoApi;
 
-
 class TodoDb : DbContext
 {
     public TodoDb(DbContextOptions<TodoDb> options)
