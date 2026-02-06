@@ -1,5 +1,9 @@
-using Microsoft.EntityFrameworkCore;
-using TodoApi;
+#region system namespaces
+    using Microsoft.EntityFrameworkCore;
+#endregion 
+#region project namespaces
+    using TodoApi;
+#endregion
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<TodoDb>(opt => opt.UseInMemoryDatabase("TodoList"));
