@@ -1,4 +1,4 @@
-This is a simple open source .NET CORE 10.0 Minimal API's application.  It is work in progress (more work pending) and new code will be checked in to this repo soon. 
+This is a simple open source .NET CORE 10.0 Minimal API's application.   
 
 Built using ASP.NET Core Minimal APIs (WebApplication / route handlers).
 
@@ -31,6 +31,35 @@ API Endpoints are below:
 |   POST | `/todoitems`          | Add a new item            |
 |    PUT | `/todoitems/{id}`     | Update an existing item   |
 | DELETE | `/todoitems/{id}`     | Delete an item            |
+
+
+# Project Structure and Code files: 
+# TodoApi/
+    
+            ├── obj/                         # Build artifacts (auto-generated)
+                        
+            ├── Properties/
+            │   └── launchSettings.json      # Debug & launch configurations
+            
+            ├── Program.cs                   # Main application entry (minimal API endpoints)
+            
+            ├ ── Todo.cs                      # Domain model (Todo item)
+
+            ├── TodoItemDTO.cs               # DTO file (Todo item)
+
+            ├── TodoApi.http                 # File where HttpVerb requests are created/ generated when Endpoints explorer is clicked. 
+
+            ├── TodoDb.cs                    # EF Core in-memory database context
+
+            ├── appsettings.json             # Configuration settings (optional)
+
+            ├── appsettings.Development.json # Development config overrides (optional)
+
+            ├── TodoApi.csproj               # .NET project file
+
+            ├── README.md                   # Project overview and setup instructions (this file) 
+
+            └── .gitignore                   # Files/folders to ignore in git
 
 
 Learn more / References
